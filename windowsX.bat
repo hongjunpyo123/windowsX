@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
+title Windows_X
 
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if %errorlevel% == 0 (
