@@ -80,23 +80,61 @@ goto main
 set input=5
 cls
 echo --------------------------------
-echo [ !WindowsVersion! !Edition! 으로 인증을 진행합니다.]
+echo [ 윈도우 !WindowsVersion! !Edition! 으로 인증을 진행합니다.]
 echo --------------------------------
 pause
 
 if "!WindowsVersion!"=="10" (
     if "!Edition!"=="Home" (
         start slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
-        start slmgr /skms kms.digiboy.ir
-        start slmgr /ato
-        start taskkill /f /im explorer.exe
-        start shutdown -f -r -t 1
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms.digiboy.ir
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+		
     ) else if "!Edition!"=="Pro" (
         start slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-        start slmgr /skms kms.digiboy.ir
-        start slmgr /ato
-        start taskkill /f /im explorer.exe
-        start shutdown -f -r -t 1
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms.digiboy.ir
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+		
     ) else (
 		cls
 		echo --------------------------------
@@ -108,16 +146,54 @@ if "!WindowsVersion!"=="10" (
 ) else if "!WindowsVersion!"=="11" (
     if "!Edition!"=="Home" (
         start slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
-        start slmgr /skms kms.digiboy.ir
-        start slmgr /ato
-        start taskkill /f /im explorer.exe
-        start shutdown -f -r -t 1
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms.digiboy.ir
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+		
     ) else if "!Edition!"=="Pro" (
         start slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-        start slmgr /skms kms.digiboy.ir
-        start slmgr /ato
-        start taskkill /f /im explorer.exe
-        start shutdown -f -r -t 1
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms.digiboy.ir
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+		
     ) else (
 		cls
 		echo --------------------------------
