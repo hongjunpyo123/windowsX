@@ -55,7 +55,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 자동인증
 echo │
@@ -217,7 +217,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 윈도우 7
 echo │
@@ -242,7 +242,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 윈도우 7 home
 echo │
@@ -279,7 +279,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 윈도우 8 home
 echo │
@@ -316,7 +316,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 윈도우 10 home
 echo │
@@ -403,7 +403,7 @@ set input=5
 cls
 echo ┍───────────────────────────────
 echo │
-echo │       [ 현재 설치된 버젼 : Windows 8 Home ]
+echo │       [ 현재 설치된 버젼 : Windows !WindowsVersion! !Edition! ]
 echo │
 echo │     1. 윈도우 11 home
 echo │
