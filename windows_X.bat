@@ -42,22 +42,23 @@ for /f "tokens=3 delims= " %%a in ('reg query "HKLM\SOFTWARE\Microsoft\Windows N
 if "!Edition!"=="Core" set Edition=Home
 if "!Edition!"=="Professional" set Edition=Pro
 
+for /F "tokens=4 delims= " %%G in ('ver') do (
+    set VERSION=%%G
+)
 
-:: Get Windows Version
-for /f "tokens=3 delims= " %%v in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v CurrentVersion') do set Version=%%v
+rem Extract major and minor version numbers
+for /F "tokens=1,2 delims=." %%A in ("%VERSION%") do (
+    set MAJOR=%%A
+    set MINOR=%%B
+)
+
+rem Print version with one decimal place
+set Version=%MAJOR%.%MINOR:~0,1%
 
 
-:: Get Windows Build Number
-for /f "tokens=3 delims= " %%b in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v CurrentBuild') do set Build=%%b
-
-:: Determine Windows Version
 set "WindowsVersion="
 if "!Version!"=="10.0" (
-    if !Build! GEQ 22000 (
-        set WindowsVersion=11
-    ) else (
-        set WindowsVersion=10
-    )
+  set WindowsVersion=10/11
 ) else if "!Version!"=="6.1" (
     set WindowsVersion=7
 ) else if "!Version!"=="6.2" (
@@ -108,8 +109,9 @@ echo [ 윈도우 !WindowsVersion! !Edition! 으로 인증을 진행합니다.]
 echo --------------------------------
 pause
 
-if "!WindowsVersion!"=="10" (
+if "!WindowsVersion!"=="10/11" (
     if "!Edition!"=="Home" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
         	
 		cls
@@ -135,6 +137,7 @@ if "!WindowsVersion!"=="10" (
 		start shutdown -f -r -t 1
 		
     ) else if "!Edition!"=="Pro" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
         	
 		cls
@@ -167,8 +170,9 @@ if "!WindowsVersion!"=="10" (
 		pause
 		goto main
 	)
-) else if "!WindowsVersion!"=="11" (
+) else if "!WindowsVersion!"=="10/11" (
     if "!Edition!"=="Home" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
         	
 		cls
@@ -194,6 +198,7 @@ if "!WindowsVersion!"=="10" (
 		start shutdown -f -r -t 1
 		
     ) else if "!Edition!"=="Pro" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
         	
 		cls
@@ -228,6 +233,7 @@ if "!WindowsVersion!"=="10" (
 	)
 ) else if "!WindowsVersion!"=="7" (
     if "!Edition!"=="Home" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
         	
 		cls
@@ -253,6 +259,7 @@ if "!WindowsVersion!"=="10" (
 		start shutdown -f -r -t 1
 		
     ) else if "!Edition!"=="Pro" (
+	start taskkill /f /im explorer.exe
         start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
         	
 		cls
