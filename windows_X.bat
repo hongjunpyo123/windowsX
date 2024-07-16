@@ -53,21 +53,21 @@ if "!Version!"=="10.0" (
 
 
 :main
-set input=5
+set input=10
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 濠翕檣隸
-echo 弛
-echo 弛     2. 熱翕檣隸
-echo 弛
-echo 弛     3. 孺紫辦 幗瞪 薑爾 爾晦
-echo 弛
-echo 弛     4. 孺紫辦 塭檜撫蝶 薑爾 爾晦
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收式旬
+echo 早
+echo 早     1. 濠翕檣隸
+echo 早
+echo 早     2. 熱翕檣隸
+echo 早
+echo 早     3. 孺紫辦 幗瞪 薑爾 爾晦
+echo 早
+echo 早     4. 孺紫辦 塭檜撫蝶 薑爾 爾晦
+echo 早
+echo 早     5. 紫遺蜓
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收旭                                                                                                       
 set/p input=殮溘:
 
 if %input%==1 goto a
@@ -76,6 +76,7 @@ if %input%==3 goto c
 if %input%==4 (
 	start slmgr /dlv
 )
+if %input%==5 goto d
 
 goto main
 
@@ -266,21 +267,21 @@ if "!WindowsVersion!"=="10" (
 )
 
 :b
-set input=5
+set input=10
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 孺紫辦 7
-echo 弛
-echo 弛     2. 孺紫辦 8
-echo 弛
-echo 弛     3. 孺紫辦 10
-echo 弛
-echo 弛     4. 孺紫辦 11
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早
+echo 早       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
+echo 早
+echo 早     1. 孺紫辦 7
+echo 早
+echo 早     2. 孺紫辦 8
+echo 早
+echo 早     3. 孺紫辦 10
+echo 早
+echo 早     4. 孺紫辦 11
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                      
 set/p input=殮溘:
 
 if %input%==1 goto 7
@@ -293,17 +294,17 @@ goto b
 :7
 set input=5
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 孺紫辦 7 home
-echo 弛
-echo 弛     2. 孺紫辦 7 pro
-echo 弛
-echo 弛     0. 給嬴陛晦
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早
+echo 早       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
+echo 早
+echo 早     1. 孺紫辦 7 home
+echo 早
+echo 早     2. 孺紫辦 7 pro
+echo 早
+echo 早     0. 給嬴陛晦
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                           
 set/p input=殮溘:
 
 if %input%==1 (
@@ -374,19 +375,19 @@ if %input%==0 (
 goto 7
 
 :8
-set input=5
+set input=10
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 孺紫辦 8 home
-echo 弛
-echo 弛     2. 孺紫辦 8 pro
-echo 弛
-echo 弛     0. 給嬴陛晦
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早
+echo 早       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
+echo 早
+echo 早     1. 孺紫辦 8 home
+echo 早
+echo 早     2. 孺紫辦 8 pro
+echo 早
+echo 早     0. 給嬴陛晦
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                       
 set/p input=殮溘:
 
 if %input%==1 (
@@ -411,19 +412,19 @@ if %input%==0 (
 goto 8
 
 :10
-set input=5
+set input=10
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 孺紫辦 10 home
-echo 弛
-echo 弛     2. 孺紫辦 10 pro
-echo 弛
-echo 弛     0. 給嬴陛晦
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早
+echo 早       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
+echo 早
+echo 早     1. 孺紫辦 10 home
+echo 早
+echo 早     2. 孺紫辦 10 pro
+echo 早
+echo 早     0. 給嬴陛晦
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                         
 set/p input=殮溘:
 
 if %input%==1 (
@@ -498,19 +499,19 @@ if %input%==0 (
 goto 10
 
 :11
-set input=5
+set input=10
 cls
-echo 牟式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
-echo 弛
-echo 弛       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
-echo 弛
-echo 弛     1. 孺紫辦 11 home
-echo 弛
-echo 弛     2. 孺紫辦 11 pro
-echo 弛
-echo 弛     0. 給嬴陛晦
-echo 弛
-echo 汎式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式                                                                                                       
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早
+echo 早       [ ⑷營 撲纂脹 幗蟒 : Windows !WindowsVersion! !Edition! ]
+echo 早
+echo 早     1. 孺紫辦 11 home
+echo 早
+echo 早     2. 孺紫辦 11 pro
+echo 早
+echo 早     0. 給嬴陛晦
+echo 早
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                      
 set/p input=殮溘:
 
 if %input%==1 (
@@ -584,17 +585,39 @@ if %input%==0 (
 )
 goto 11
 
-
-
-
-
 :c
 start "" winver
 goto main
 
+:d
+set input=10
+cls
+echo 旨收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早 0. 給嬴陛晦
+echo 曳收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收       
+echo 早 [濠翕檣隸]
+echo 早
+echo 早 *濠翕檣隸擎 ⑷營 闡У攪縑 撲纂脹 孺紫辦 幗瞪擊 碳楝諦 檣隸酈蒂 瞳辨ж朝 晦棟殮棲棻.     
+echo 早  ⑷營 闡У攪曖 溯雖蝶お葬縑 盪濰脹 高擊 碳楝螃晦 陽僥縑 褒薯 撲纂脹 幗瞪婁
+echo 早  橾纂ж雖 彊擊 熱 氈蝗棲棻. п渡 褫暮 餌辨 瞪 [3: 幗瞪 薑爾 爾晦] 詭景蒂 �挫恉狤�    
+echo 早  撲纂脹 孺紫辦 幗瞪婁 橾纂ж朝雖 �挫恉牮簽� 夥奧棲棻.
+echo 曳收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
+echo 早 [熱翕檣隸]
+echo 早
+echo 早 *熱翕檣隸擎 錳ж朝 孺紫辦 幗瞪擊 摹鷗ж罹 檣隸酈蒂 瞳辨й 熱 氈朝 晦棟殮棲棻.   
+echo 曳收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收  
+echo 早 [嶸曖餌о]
+echo 早  
+echo 早 *賅萇 幗瞪曖 孺紫辦 檣隸擎 識 3欽啗煎 檜瑞橫雖貊, 葆雖虞 3欽啗 瞳辨 衛 擒 3蟾除曖 
+echo 早  瞳辨 衛除檜 в蹂м棲棻. 檣隸酈陛 瞳辨腎歷棻朝 で機璽檜 嗑賊 縛攪蒂 揚楝 闡У攪蒂
+echo 早  營衛濛 ж罹 輿衛晦 夥奧棲棻
+echo 曲收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收                                                                                                      
+set/p input=殮溘:
+if %input%==0 (
+	goto main
+)
 
-
-
+goto d
 
 
 
