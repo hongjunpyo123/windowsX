@@ -6,7 +6,7 @@ title Windows_X
 
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if %errorlevel% == 0 (
-    echo Script is running with administrative privileges
+	echo 프로그램 실행중.. 잠시만 기다려 주세요!
 ) else (
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\admin.vbs"
     echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\admin.vbs"
