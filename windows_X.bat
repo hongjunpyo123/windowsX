@@ -45,6 +45,8 @@ if "!Version!"=="10.0" (
     set WindowsVersion=8
 ) else if "!Version!"=="6.3" (
     set WindowsVersion=8
+) else if "!Version!"=="6.0" (
+    set WindowsVersion=vista
 ) else (
     set WindowsVersion=null
 )
@@ -203,6 +205,57 @@ if "!WindowsVersion!"=="10" (
 		pause
 		goto main
 	)
+) else if "!WindowsVersion!"=="7" (
+    if "!Edition!"=="Home" (
+        start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms8.msguides.com
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+		
+    ) else if "!Edition!"=="Pro" (
+        start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms8.msguides.com
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
+	)		
 ) else (
 	cls
 	echo --------------------------------
@@ -259,6 +312,29 @@ if %input%==1 (
 	echo [ 윈도우 7 home 으로 인증을 진행합니다.]
 	echo --------------------------------
 	pause
+	start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms8.msguides.com
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
 )
 
 if %input%==2 (
@@ -267,6 +343,29 @@ if %input%==2 (
 	echo [ 윈도우 7 pro 으로 인증을 진행합니다.]
 	echo --------------------------------
 	pause
+	start slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+        	
+		cls
+		echo --------------------------------
+		echo [ 1/3단계 적용완료..]
+		pause
+		
+		start slmgr /skms kms8.msguides.com
+		
+		echo [ 2/3단계 적용완료..]
+		pause
+		
+		start slmgr /ato
+		
+		echo [ 3/3단계 적용완료..]
+		pause
+		
+		cls
+		echo --------------------------------
+		echo [ 적용을 완료하였습니다. 재시작 합니다. ]
+		echo --------------------------------
+		pause
+		start shutdown -f -r -t 1
 )
 
 if %input%==0 (
