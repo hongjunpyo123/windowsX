@@ -1,4 +1,5 @@
 @echo off
+
 setlocal enabledelayedexpansion
 
 title Windows_X
@@ -13,6 +14,24 @@ if %errorlevel% == 0 (
     del "%temp%\admin.vbs"
     exit /B
 )
+
+
+
+:: 윈도우 인증여부 확인
+set license=인증되지않음.
+set tempfile=%temp%\slmgr_output.txt
+
+cscript //nologo %windir%\system32\slmgr.vbs /dli > %tempfile%
+
+findstr /i "License Status: Licensed" %tempfile% > nul
+if %errorlevel% equ 0 (
+    set license=인증됨.
+)
+findstr /i "라이선스 상태: 사용 허가됨" %tempfile% > nul
+if %errorlevel% equ 0 (
+    set license=인증됨.
+)
+del %tempfile%
 
 
 
@@ -56,6 +75,7 @@ if "!Version!"=="10.0" (
 set input=10
 cls
 echo ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━─┓
+echo ┃   [윈도우 인증 여부 : !license!]
 echo ┃
 echo ┃     1. 자동인증
 echo ┃
